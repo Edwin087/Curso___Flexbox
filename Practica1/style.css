@@ -1,0 +1,22 @@
+.flexcontainer {
+  display: flex;
+  /*flex-flow: row wrap; para flex-direction  y  flex-wrap que una las dos propiedades */
+
+  background-color: burlywood;
+  padding: 5px;
+  height: 300px;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row wrap;
+  /* justify-content: space-evenly; */
+  /*align-items: baseline;
+ baseline se puede utilizar con medidas y le va alinear   */
+  align-content: center;
+  justify-content: center;
+  /* con  align-content: center y justify-content: center... se puede hacer un centrado perfecto  */
+}
+.flexcontainer div {
+  background-color: gainsboro;
+  margin: 5px;
+  padding: 10px;
+}
