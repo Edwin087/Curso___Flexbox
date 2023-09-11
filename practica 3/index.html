@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: rgb(70, 43, 226);
+            flex-direction: row;
+        }
+
+        .container div {
+            background-color: brown;
+            margin: 5px;
+            color: white;
+            flex-basis: 100px;
+            text-align: center;
+
+        }
+
+        @media (max-width:600px) {
+            .container {
+                flex-direction: column;
+
+            }
+
+            .container div {
+                flex-basis: 100%;
+            }
+
+        }
+
+        /* con los @media se puede trabajar en combinacion con flexbox se puede cambiar de fila y columna */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+
+</html>
